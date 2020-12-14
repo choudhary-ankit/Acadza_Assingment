@@ -1,0 +1,320 @@
+.body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.sidebar{
+    width: 20%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+.tools{
+    width: 60%;
+    height: 30px;
+    background-color: #f0f0f2;
+    color: gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.tools_arrng{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    font-weight: 500;
+    font-size: 15px;
+}
+.menu_aarng{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: black;
+}
+.menu_change{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6739b7;
+    color: white;
+}
+.menu_context{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.icon_size{
+    width: 25px;
+    height: 25px;
+}
+.pagecontent{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.topcontainer{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.option_arrng{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.option{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    background-color:#f0f0f0;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+}
+.select{
+    outline: none;
+    color: #6739b7;
+    border: none;
+    background-color: transparent;
+}
+.search_option{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    color: #6739b7;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+   
+}
+.searchIcon {
+    padding: 2px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input_box{
+    width: 160px;
+    height: 40px;
+    background-color:transparent;
+    color: #6739b7;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    padding: 5px;
+    left: 15%;
+}
+::placeholder {
+    color: #6739b7;
+    font-size: 15px;
+}
+.search_icon{
+    position: absolute;
+    left: 52%;
+    top: 4%;
+}
+.notification{
+    width: 40%;
+    height: auto;
+    
+}
+.notification_arrng{
+    width: 60%;
+    height: 50px;
+    background-color: #f0f0f0;
+    color: #6739b7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.welcome{
+    width: 98%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6739b7;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 840px){
+    .body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+    }
+    .sidebar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .menu_aarng{
+        margin-top: 30px;
+        width: 70%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;  
+        row-gap: 25%;
+        column-gap: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: black;
+        text-align: center;
+    }
+    .menu_change{
+        width: 100%;
+        height: 80px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6739b7;
+        color: white;
+        text-align: center;
+    }
+    .menu_context{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 20px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .pagecontent{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .topcontainer{
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .option_arrng{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .option{
+        width: 70%;
+        height: 50px;
+        display: flex;
+        background-color:#f0f0f0;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .select{
+        outline: none;
+        color: #6739b7;
+        border: none;
+        background-color: transparent;
+    }
+    .search_option{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .notification{
+        width: 70%;
+        height: auto;
+        
+    }
+    .notification_arrng{
+        width: 100%;
+        height: 50px;
+        background-color: #f0f0f0;
+        color: #6739b7;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
